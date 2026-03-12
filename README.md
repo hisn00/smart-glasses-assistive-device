@@ -17,6 +17,16 @@ The system uses an **ultrasonic sensor** to measure distance and alerts the user
 
 ---
 
+## Features 
+- ## Components Used
+- Detects obstacles in real time
+- Distance-based warning system
+- Buzzer alerts when objects are close
+- LED visual indicator
+- Lightweight wearable prototype
+
+---
+
 ## How It Works
 1. Ultrasonic sensor detects objects in front.
 2. Arduino calculates the distance.
