@@ -36,5 +36,4 @@ The system uses an **ultrasonic sensor** to measure distance and alerts the user
 ---
 
 ## Author
-**Hisnul Mohammed**  
-High school student |Cybersecurity & AI Enthusiast# smart-glasses-assistive-device
+**Hisnul Mohammed** 
