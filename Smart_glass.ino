@@ -5,7 +5,6 @@ const int buzzer = 8;
 long duration;
 int distance;
 
-// For smoothing (reducing noise)
 int readDistance() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
@@ -29,7 +28,7 @@ void setup() {
 }
 
 void loop() {
-  // Take multiple readings for accuracy
+  
   int total = 0;
   for (int i = 0; i < 5; i++) {
     total += readDistance();
@@ -41,10 +40,8 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
-  // Smarter detection range
   if (distance > 0 && distance <= 100) {
 
-    // Faster and smoother mapping
     int beepDelay = map(distance, 5, 100, 50, 600);
     beepDelay = constrain(beepDelay, 50, 600);
 
